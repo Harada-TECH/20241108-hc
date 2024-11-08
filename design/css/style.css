@@ -1,0 +1,87 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 100vh;
+  background: url("../img/bg_wood.jpg");
+}
+
+#gnav {
+  width: 100%;
+  background: #000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  overflow-x: hidden;
+}
+
+#gnav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+#gnav .page {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gnav a {
+  display: block;
+}
+#gnav a:hover {
+  opacity: .8;
+}
+
+#gnav .logo img {
+  display: block;
+}
+
+#gnav .page a {
+  height: 100%;
+  line-height: 100px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0 2em;
+}
+
+#gnav .page:nth-of-type(1) a {
+  background: red;
+}
+#gnav .page:nth-of-type(2) a {
+  background: green;
+}
+#gnav .page:nth-of-type(3) a {
+  background: blue;
+}
+#gnav .page:nth-of-type(4) a {
+  background: yellow;
+}
+
+main {
+  min-height: 100vh;
+}
+
+footer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+#copyright {
+  color: #fff;
+  font-size: 12px;
+}
